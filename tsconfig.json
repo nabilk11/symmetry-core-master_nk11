@@ -1,0 +1,37 @@
+{
+
+  "name": "symmetry-core-meistro",
+  "description": "cloned from symmetry-core-master // edited, need to add additonal edits.",
+  "main": "dist/index.js",
+  "scripts": {
+    "compilerOptions": {
+    "version": "1.0.0",
+    "target": "ES2018",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "lib": ["ES2018", "DOM", "DOM.Iterable"],
+    "types": ["node", "jest"],
+    "typeRoots": ["./node_modules/@types", "."],
+    "moduleResolution": "node",
+    "declaration": true
+  },
+  "ts-node": {
+    "files": true
+  },
+  "files": [
+    "src/index.d.ts"
+  ],
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "include": ["src/**/*", "src/index.d.ts"],
+  "exclude": ["node_modules"],
+}
+}
